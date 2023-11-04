@@ -1,0 +1,2 @@
+# terraformconditions
+used terragrunt
