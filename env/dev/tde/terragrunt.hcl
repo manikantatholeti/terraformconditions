@@ -1,10 +1,11 @@
+
 ################################################################################
 # Source Path
 ################################################################################
 
 terraform {
-  #source = "git@github.com:manikantatholeti/maniterragrunt.git//terraform-templates/jenkins/"
-   source = "../../..//terraform-templates/jenkins"
+  #source = "git@github.com:manikantatholeti/terraformconditions.git//templates/jenkins"
+  source = "../../..//terraform-templates/jenkins"
 }
 ################################################################################
 # Dependancy Path (If Any)
@@ -24,5 +25,4 @@ rds_master_password = "dbadmin2023"
 rds_instance_count = "2"
 rds_database_name = "TDE-RDS-DB"
 name = "mani"
-
 }
