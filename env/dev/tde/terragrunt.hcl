@@ -26,3 +26,16 @@ rds_instance_count = "2"
 rds_database_name = "TDE-RDS-DB"
 name = "mani"
 }
+
+dependencies = [
+  {
+    path = "${find_in_parent_folders()}"
+    config = {
+      terraform = {
+        extra_parameters = [
+          "-Dcreate_rds=${get("create_rds")}"
+        ]
+      }
+    }
+  }
+]
