@@ -16,6 +16,7 @@ terraform {
 # Inputs
 ################################################################################
 inputs = {
+create_rds = "true"
 rds_engine = "aurora-mysql"
 rds_engine_version = "5.7.mysql_aurora.2.11.2"
 rds_instance_class = "db.t3.small"
