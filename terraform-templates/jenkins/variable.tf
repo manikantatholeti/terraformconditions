@@ -1,99 +1,99 @@
-variable "alb_1_id" {
-  type        = string
-  description = "alb ID of the Existing aws alb"
-}
+# variable "alb_1_id" {
+#   type        = string
+#   description = "alb ID of the Existing aws alb"
+# }
 
-variable "alb_listener_1_id" {
-  type        = string
-  description = "alb_listener ID of the Existing aws alb listener"
-}
+# variable "alb_listener_1_id" {
+#   type        = string
+#   description = "alb_listener ID of the Existing aws alb listener"
+# }
 
-variable "target_group_1_id" {
-  type        = string
-  description = "target group ID of the Existing aws alb"
-}
+# variable "target_group_1_id" {
+#   type        = string
+#   description = "target group ID of the Existing aws alb"
+# }
 
-variable "rule_1_id" {
-  type        = string
-  description = "alb_listener rule ID of the Existing aws alb listener rule"
-}
+# variable "rule_1_id" {
+#   type        = string
+#   description = "alb_listener rule ID of the Existing aws alb listener rule"
+# }
 
-variable "alb_sg_id" {
-  type        = string
-  description = "alb sg ID of the Existing aws alb sg"
-}
-
-
-variable "vpc_id" {
-  type        = string
-  description = "VPC ID"
-}
-
-variable "nlb_1_arn" {
-  type        = string
-  description = "nlb ID of the Existing aws nlb"
-}
-
-variable "target_group_nlb__id" {
-  type        = string
-  description = "target group ID of the Existing aws nlb"
-}
-
-variable "nlb_listener_1_id" {
-  type        = string
-  description = "nlb_listener ID of the Existing aws nlb listener"
-}
-
-variable "nlb_sg_id" {
-  type        = string
-  description = "nlb sg ID of the Existing aws nlb sg"
-}
-
-variable "cidr_blocks" {
-  type        = string
-  description = "nlb sg ID of the Existing aws nlb sg"
-}
-
-
-
-
-# variable "alb_private_subnets_ids" {
-#   description = "Private subnet CIDR list to create a subnet attached with NG"
+# variable "alb_sg_id" {
+#   type        = string
+#   description = "alb sg ID of the Existing aws alb sg"
 # }
 
 
-variable "resource_name" {
-  type        = string
-  description = "resource_name"
-}
-
-# variable "ssl_policy" {
-#   description = "ssl_policy name for alb listener"
+# variable "vpc_id" {
+#   type        = string
+#   description = "VPC ID"
 # }
 
-# variable "certificate_arn" {
-#   description = "certificate_arn for ssl_policy for alb listener"
+# variable "nlb_1_arn" {
+#   type        = string
+#   description = "nlb ID of the Existing aws nlb"
 # }
 
-variable "other_cidr_blocks" {
-  type        = string
-  description = "CIDR Blocks for Security Group"
-}
+# variable "target_group_nlb__id" {
+#   type        = string
+#   description = "target group ID of the Existing aws nlb"
+# }
 
-variable "vpc_cidr" {
-  type        = string
-  description = "vpc_cidr."
-}
+# variable "nlb_listener_1_id" {
+#   type        = string
+#   description = "nlb_listener ID of the Existing aws nlb listener"
+# }
 
-variable "lb_listener_port" {
-  type        = string
-  description = "Listener Port No for Load Balancer"
-}
+# variable "nlb_sg_id" {
+#   type        = string
+#   description = "nlb sg ID of the Existing aws nlb sg"
+# }
 
-variable "lb_listener_protocol" {
-  type        = string
-  description = "Listener Port No for Load Balancer"
-}
+# variable "cidr_blocks" {
+#   type        = string
+#   description = "nlb sg ID of the Existing aws nlb sg"
+# }
+
+
+
+
+# # variable "alb_private_subnets_ids" {
+# #   description = "Private subnet CIDR list to create a subnet attached with NG"
+# # }
+
+
+# variable "resource_name" {
+#   type        = string
+#   description = "resource_name"
+# }
+
+# # variable "ssl_policy" {
+# #   description = "ssl_policy name for alb listener"
+# # }
+
+# # variable "certificate_arn" {
+# #   description = "certificate_arn for ssl_policy for alb listener"
+# # }
+
+# variable "other_cidr_blocks" {
+#   type        = string
+#   description = "CIDR Blocks for Security Group"
+# }
+
+# variable "vpc_cidr" {
+#   type        = string
+#   description = "vpc_cidr."
+# }
+
+# variable "lb_listener_port" {
+#   type        = string
+#   description = "Listener Port No for Load Balancer"
+# }
+
+# variable "lb_listener_protocol" {
+#   type        = string
+#   description = "Listener Port No for Load Balancer"
+# }
 
 variable "create_rds" {
   type = bool
