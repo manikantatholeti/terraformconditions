@@ -23,6 +23,7 @@ rds_instance_class = "db.t3.small"
 rds_master_username ="dbadmin"
 rds_master_password = "dbadmin2023"
 rds_instance_count = "2"
+db_subnet_ids = ["subnet-0c8d39f342c9ef779", "subnet-028239c92dd0855b5"]
 rds_database_name = "TDE-RDS-DB"
 name = "mani"
 }

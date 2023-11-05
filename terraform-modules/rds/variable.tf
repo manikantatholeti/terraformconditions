@@ -40,9 +40,9 @@ variable "rds_instance_class" {
   # default = "db.t3.small"
 }
 
-# variable "db_subnet_ids" {
-#   description = "Subnet IDs for RDS"
-# }
+variable "db_subnet_ids" {
+  description = "Subnet IDs for RDS"
+}
 
 variable "rds_master_username" {
   type = string
