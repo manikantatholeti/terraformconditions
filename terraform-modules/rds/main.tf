@@ -56,7 +56,7 @@ resource "aws_rds_cluster_instance" "cluster_instances" {
 resource "aws_db_subnet_group" "rds_db_subnet" {
   count = var.create_rds ? 1 : 0
   name       = "${var.name}-${var.environment}-${var.product}-rds-db-subnet-group"
-  subnet_ids = var.db_subnet_ids
+  subnet_ids = -var.db_subnet_ids
   tags = {
     "Name" = "${var.name}-${var.environment}-${var.product}-rds-db-subnet-group",
     "environment" = "${var.environment}",
