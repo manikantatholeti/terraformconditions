@@ -29,6 +29,7 @@
 module "rds" {
   source              = "../../terraform-modules/rds"
   create_rds          = var.create_rds
+  db_subnet_ids       = var.subnet_ids
   rds_engine          = var.rds_engine
   rds_engine_version  = var.rds_engine_version
   rds_instance_class  = var.rds_instance_class
@@ -36,6 +37,7 @@ module "rds" {
   rds_master_password = var.rds_master_password
   rds_instance_count  = var.rds_instance_count
   rds_database_name   = var.rds_database_name
+  
   name                = var.name
 }
   

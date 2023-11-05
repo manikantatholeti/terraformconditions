@@ -152,6 +152,11 @@ variable "rds_database_name" {
   # default = "TDE-RDS-DB"
 }
 
+variable "subnet_ids" {
+  description = "Subnet IDs for RDS"
+}
+
+
 variable "name" {
   type        = string
   description = "Name of the VPC"
