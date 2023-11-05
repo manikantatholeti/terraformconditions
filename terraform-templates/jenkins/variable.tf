@@ -153,7 +153,7 @@ variable "rds_database_name" {
 }
 
 variable "subnet_ids" {
-  type = string
+  type = list(string)
   description = "Subnet IDs for RDS"
 }
 

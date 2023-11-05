@@ -40,7 +40,8 @@ variable "rds_instance_class" {
   # default = "db.t3.small"
 }
 
-variable "db_subnet_ids" {
+variable "subnet_ids" {
+  type = list(string)
   description = "Subnet IDs for RDS"
 }
 
